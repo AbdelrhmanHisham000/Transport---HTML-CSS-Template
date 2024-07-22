@@ -241,7 +241,7 @@ body {
   .landing-header .land-info {
     width: 70%;
     left: 70px;
-    top: 270px;
+    top: 160px;
     text-align: center;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.42);
@@ -660,6 +660,12 @@ h3 {
   height: 200px;
   background-color: var(--dark-orange);
 }
+@media (min-width: 631px) and (max-width: 991px) {
+  .subscribe {
+    height: 130px;
+    background-color: var(--dark-orange);
+  }
+}
 
 .subscribe .container {
   display: grid;
@@ -669,21 +675,73 @@ h3 {
 .subscribe .container .sub-images {
   position: relative;
 }
+
 .subscribe .container .sub-images img {
   position: absolute;
   top: -181px;
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .subscribe .container .sub-images {
+    display: none;
+  }
+  .subscribe .container .sub-images img {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .subscribe .container .sub-images {
+    display: none;
+  }
+  .subscribe .container .sub-images img {
+    display: none;
+  }
+}
+
 .subscribe .container .sub-text {
   padding: 40px 0 0;
   font-weight: bold;
   color: var(--prussian-blue);
-
   font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .subscribe .container .sub-text {
+    padding: 10px 0 0;
+    font-weight: bold;
+    color: var(--prussian-blue);
+    font-size: 35px;
+  }
+  .subscribe .container .sub-text p {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .subscribe .container .sub-text {
+    padding: 10px 0 0;
+    font-weight: bold;
+    color: var(--prussian-blue);
+    font-size: 35px;
+  }
+  .subscribe .container .sub-text p {
+    text-align: center;
+  }
 }
 .subscribe .container .sub-email {
   padding: 40px 0 0;
+}
+
+/* @media (max-width: 768px) {
+  .subscribe .container .sub-email {
+    padding: 10px 0 0;
+  }
+} */
+@media (max-width: 991px) {
+  .subscribe .container .sub-email {
+    padding: 10px 50px 0;
+  }
 }
 
 .subscribe .container .sub-email input {
@@ -696,6 +754,31 @@ h3 {
   outline: none;
   transition: var(--transition);
 }
+@media (max-width: 768px) {
+  .subscribe .container .sub-email input {
+    background-color: var(--white);
+    color: var(--eerie-black);
+    font-size: var(--fs-9);
+    height: 45px;
+    padding-inline: 20px;
+    margin-block-end: 10px;
+    outline: none;
+    transition: var(--transition);
+  }
+}
+@media (max-width: 991px) {
+  .subscribe .container .sub-email input {
+    background-color: var(--white);
+    color: var(--eerie-black);
+    font-size: var(--fs-9);
+    height: 45px;
+    padding-inline: 20px;
+    margin-block-end: 10px;
+    outline: none;
+    transition: var(--transition);
+  }
+}
+
 .subscribe .container .sub-email button {
   padding: 15px 25px;
   background-color: var(--prussian-blue);
@@ -705,6 +788,19 @@ h3 {
   margin-top: 0px;
   outline: none;
   transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .subscribe .container .sub-email button {
+    padding: 8px 24px;
+    background-color: var(--prussian-blue);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    outline: none;
+    transition: 0.5s;
+  }
 }
 
 /* end of subscribe */
@@ -745,6 +841,13 @@ h3 {
   flex-direction: column;
   margin-right: 20px;
 }
+@media (max-width: 768px) {
+  .info .info-contact {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+}
 .info .info-contact p {
   margin-bottom: 20px;
   font-size: 18px;
@@ -763,7 +866,7 @@ h3 {
 @media (max-width: 768px) {
   .info .info_social {
     margin-bottom: 15px;
-    margin-left: 15px;
+    margin-left: 0px;
   }
 }
 .info .info_social a {
@@ -812,8 +915,13 @@ h3 {
 }
 @media (max-width: 768px) {
   .info .info_detail p {
-    margin-left: 31px;
+    margin-left: 0px;
     margin-bottom: 20px;
+  }
+  .info .info_detail {
+    flex-basis: 40%;
+    margin-right: 0px;
+    margin-top: 10px;
   }
 }
 
